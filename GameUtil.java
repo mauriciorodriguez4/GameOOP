@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package gameoop;
 
 /**
@@ -15,9 +10,9 @@ Programa:           GameOOP.Java
 Descripcion:        Juego de Roles en Java
 Programador:        Amanda Castro
 Fecha de Creacion:  01/02/2022
-Fecha de Revision:  
+Fecha de Revision:  22/04/2022
 */
-public class GameUtil {
+public abstract class GameUtil {
     String name = "Computadora";    //nombre
     int life =80;     //vida
     int attack=15;     //fuerza de ataque
@@ -64,12 +59,12 @@ public class GameUtil {
         this.hr = _hr;
     }
     
-    
-    public void  metodo1( int _attack)
+    //metodo de ataque a personajes
+    public void  danhoRecibido( int _attack)
     {
         int hurt =0;
         int residualLife; //Vida restante
-        if(booleano1()){
+        if(EstadoVida()){
             if(this.attack>this.defense){
                 hurt = attack- defense;
             }
@@ -85,8 +80,8 @@ public class GameUtil {
             
         }
     }
-    
-    public boolean booleano1()
+    //Chequeo para ver si esta vivo o muerto
+    public boolean EstadoVida()
     {
         boolean a = true;
         if (this.life <=0)
@@ -97,8 +92,8 @@ public class GameUtil {
         return a;
     }
     
-    
-    public void metodo2()
+    //Cuando un personaje esquiva un ataque
+    public void esquivarAtaque()
     {
         System.out.println("No hubo golpe... "+ this.name +" evitalo!!!");
     }
