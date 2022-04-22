@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package gameoop;
 
 /**
@@ -20,9 +15,8 @@ public class Soldier extends GameUtil{
     }
 
     @Override
-    public void metodo2() {
-        System.out.println(this.name+" realizo un salto y escapo!"); //To change body of generated methods, choose Tools | Templates.
+    public void esquivarAtaque() {
+        System.out.println(this.name+" realizo un salto y escapo!"); 
     }
-    
     
 }
